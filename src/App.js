@@ -3,6 +3,8 @@ import './App.css';
 import AddSmart from './components/AddSmart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SearchSmart from './components/SearchSmart';
+import DeleteSmart from './components/DeleteSmart';
+import ViewAll from './components/ViewAll';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
    <Routes>
     <Route path='/'  element={<AddSmart/>}/>
     <Route path='/search'  element={<SearchSmart/>}/>
+    <Route path='/delete'  element={<DeleteSmart/>}/>
+    <Route path='/viewall'  element={<ViewAll/>}/>
    </Routes>
    </BrowserRouter>
   );
